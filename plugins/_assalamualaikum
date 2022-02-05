@@ -1,0 +1,15 @@
+let handler = async (m, { conn }) => {
+let caption = `*Waalaikummussalam warahmatullahi wabarokatuh*
+
+
+_📚 Baca yang dibawah ya!_
+"Orang yang mengucapkan salam seperti ini maka ia mendapatkan 30
+`
+
+conn.sendButton(m.chat, caption, author, null, [
+        ['Waalaikumsalam', 'Waalaikumsalam'],
+    ], { quoted: m })
+}
+handler.customPrefix = /^(assalamualaikum|salam)/i
+handler.command = new RegExp
+module.exports = handler
